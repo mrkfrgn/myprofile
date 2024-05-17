@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>My Profile (練習)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="description" content=" jQueryを使って模写コーディング">
+    
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav-pc">
+        <a id="title" href="index.html">MyProfile</a>
+        <div class="nav">
+          <a class="menu" href="#about">About</a>
+          <a class="menu" href="#works">Works</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section>
+        <div id="carousel-section">
+          <div> <img class="main-visual" src="images/main.png"></div>
+          <div><img class="main-visual" src="images/main2.png"></div>
+          <div><img class="main-visual" src="images/main3.png"></div>
+        </div>
+        </section>
+        <section class="fade-section">
+        <div id="about" class="fade-out">
+        <div>
+          <h1 class="index-h1">About</h1>
+        </div>
+          <div>
+            <img id="about-img" src="images/about.png">
+          </div>
+          <div id="introduction">
+            <h2 id="index-h2">Kazuki Asahina</h2>
+            <li>25歳　長野県佐久市出身</li>
+            <li>ソフトウェア業界でマーケティングに従事</li>
+            <li>趣味はカメラ、愛機はCanon</li>
+            <li>自然を撮影するのが好きで、海や山によく行く</li>
+        </div>
+        </div>
+      </section>
+      <section class="fade-section">
+        <div id="works" class="fade-out">
+          <div>
+            <h1 class="index-h1">Works</h1>
+          </div>
+            <div class="works-contents">
+              <ul>
+                <li>
+                  <img class="modal-img" src="images/works1.png">
+                  <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した１枚</p>
+                </li>
+                <li>
+                  <img class="modal-img" src="images/works2.png">
+                  <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+                </li>
+                <li>
+                  <img class="modal-img" src="images/works3.png">
+                  <p>京都で撮影した、明け方の古き良き日本の街並み</p>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </section>
+        <a id="back-btn" href="#">TOP</a>
+      </article>
+    </main>
+    <footer class="fade-out">&copy MyProfile. All rights reserved.</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
