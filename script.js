@@ -1,3 +1,4 @@
+
 $('#carousel-section').slick({
   autoplay: true,
   dots: true,
@@ -7,31 +8,18 @@ $('#carousel-section').slick({
 });
 
 $(function () {
-  $('#title').on('mouseover', function() {
+  $('.opacity').on('mouseover', function() {
     $(this). animate({
       opacity: 0.5,
     },100);
   });
 
-  $('#title').on('mouseout', function() {
+  $('.opacity').on('mouseout', function() {
     $(this). animate({
       opacity: 1.0,
     }, 100);
   });
 });
-
-$(function () {
-  $('.menu').on('mouseover', function() {
-    $(this). animate({
-      opacity: 0.5,
-    },100);
-  });
-
-  $('.menu').on('mouseout', function() {
-    $(this). animate({
-      opacity: 1.0,
-    }, 100);
-  });
 
   $(window).scroll(function () {
     if($(window).scrollTop() > 1) {
@@ -54,12 +42,22 @@ $(function () {
   $(window).scroll(function () {
     const scrollAmount = $(window).scrollTop();
     const windowHeight = $(window).height();
-    $('fade-out').each(function () {
+    $('.fade-out').each(function () {
       const position = $(this).offset().top;
       if (scrollAmount > position - windowHeight + 100) {
         $(this).addClass('fade-in');
       }
     });
   });
-});
 
+  $('.works-contents img').click(function () {
+    const imgSrc = $(this).attr('src');
+    $('.big-img').attr('src', imgSrc);
+    $('.modal-window').fadeIn();
+    return false
+    });
+
+    $('.close').click(function () {
+      $('.modal-window').fadeOut();
+      return false
+    });
